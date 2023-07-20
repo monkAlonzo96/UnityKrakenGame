@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 93
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 62
+  controlID: 17
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 63
+  controlID: 18
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -315,7 +315,7 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
     - Assets
     m_Globs: []
@@ -325,14 +325,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Veteran\Desktop\UnityKrakenGame
+  m_LastProjectPath: C:\Users\Veteran\Desktop\Unity Projects\Unity\UnityKrakenGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 266d0000
-    m_LastClickedID: 27942
-    m_ExpandedIDs: 00000000266d000000ca9a3b
+    m_SelectedIDs: c8590000
+    m_LastClickedID: 22984
+    m_ExpandedIDs: 00000000c859000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000c8590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 92f8ffff
-      m_LastClickedID: -1902
-      m_ExpandedIDs: 34fbffff
+      m_SelectedIDs: 86590000
+      m_LastClickedID: 22918
+      m_ExpandedIDs: 38fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -739,9 +739,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.649362, y: 0.8987564, z: -10.412647}
+    m_Target: {x: 1.4835272, y: 1.1938224, z: -10.306988}
     speed: 2
-    m_Value: {x: 1.649362, y: 0.8987564, z: -10.412647}
+    m_Value: {x: 1.4835272, y: 1.1938224, z: -10.306988}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -788,13 +788,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.028055519, y: 0.96811056, z: -0.21426284, w: -0.12676436}
+    m_Target: {x: -0.078784384, y: 0.91497135, z: -0.21839714, w: -0.33005512}
     speed: 2
-    m_Value: {x: -0.028055478, y: 0.9681092, z: -0.21426253, w: -0.12676418}
+    m_Value: {x: -0.07845618, y: 0.9154593, z: -0.21851361, w: -0.3286801}
   m_Size:
-    m_Target: 8.783796
+    m_Target: 2.3520799
     speed: 2
-    m_Value: 8.783796
+    m_Value: 2.2507942
   m_Ortho:
     m_Target: 0
     speed: 2
