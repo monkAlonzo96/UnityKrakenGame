@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class FlashManager : MonoBehaviour
 {
     [Header("Flash")]
     public GameObject flashPrefab;
-
+    
     public void ShowFlashEffect()
     {
         if (flashPrefab != null)
