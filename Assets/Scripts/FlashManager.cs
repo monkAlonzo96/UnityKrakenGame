@@ -7,6 +7,8 @@ public class FlashManager : MonoBehaviour
 {
     [Header("Flash")]
     public Canvas flashCanvas; // Assign the canvas in the Inspector
+    public float flashDuration = 0.5f; // Set the duration of the flash effect in seconds
+    public float flashtimer = 1.0f; // Set the duration of the fade-out effect in seconds
 
     public void ShowFlashEffect()
     {
@@ -15,16 +17,28 @@ public class FlashManager : MonoBehaviour
             // Activate the canvas to show the flash effect
             flashCanvas.gameObject.SetActive(true);
 
-            // Optionally, you can add any other customization or effects to the canvas here.
-            // For example, you could fade out the canvas after a short delay to make the flash effect disappear.
-            StartCoroutine(FadeOutCanvas());
+            // Start the flash effect coroutine
+            StartCoroutine(FlashCoroutine());
         }
     }
 
-    IEnumerator FadeOutCanvas()
+    private IEnumerator FlashCoroutine()
     {
-        // Wait for 0.5 seconds (adjust the time as needed)
-        yield return new WaitForSeconds(0.5f);
+        // Wait for the flash duration
+        yield return new WaitForSeconds(flashDuration);
+
+        // Start the fade-out effect
+        float elapsedTime = 0f;
+        CanvasGroup canvasGroup = flashCanvas.GetComponent<CanvasGroup>();
+        float startAlpha = 1f;
+
+        while (elapsedTime < flashtimer)
+        {
+            elapsedTime += Time.deltaTime;
+            float percentage = elapsedTime / flashtimer;
+            canvasGroup.alpha = Mathf.Lerp(startAlpha, 0f, percentage);
+            yield return null;
+        }
 
         // Deactivate the canvas to hide the flash effect
         flashCanvas.gameObject.SetActive(false);

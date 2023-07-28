@@ -960,6 +960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashCanvas: {fileID: 2042659815}
+  flashDuration: 1
+  fadeOutDuration: 2
 --- !u!114 &2042659813
 MonoBehaviour:
   m_ObjectHideFlags: 0
