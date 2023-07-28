@@ -6,20 +6,27 @@ using UnityEngine.InputSystem;
 public class FlashManager : MonoBehaviour
 {
     [Header("Flash")]
-    public GameObject flashPrefab;
-    
+    public Canvas flashCanvas; // Assign the canvas in the Inspector
+
     public void ShowFlashEffect()
     {
-        if (flashPrefab != null)
+        if (flashCanvas != null)
         {
-            // Instantiate the flash prefab at the center of the screen (you can change the position as needed)
-            Vector3 spawnPosition = new Vector3(Screen.width / 2f, Screen.height / 2f, 0f);
-            GameObject flashInstance = Instantiate(flashPrefab, spawnPosition, Quaternion.identity);
+            // Activate the canvas to show the flash effect
+            flashCanvas.gameObject.SetActive(true);
 
-            // Optionally, you can set the parent of the instantiated object to a canvas or other GameObject in your scene.
-            // flashInstance.transform.SetParent(parentTransform);
-
-            // Optionally, you can add any other customization or effects to the instantiated object here.
+            // Optionally, you can add any other customization or effects to the canvas here.
+            // For example, you could fade out the canvas after a short delay to make the flash effect disappear.
+            StartCoroutine(FadeOutCanvas());
         }
+    }
+
+    IEnumerator FadeOutCanvas()
+    {
+        // Wait for 0.5 seconds (adjust the time as needed)
+        yield return new WaitForSeconds(0.5f);
+
+        // Deactivate the canvas to hide the flash effect
+        flashCanvas.gameObject.SetActive(false);
     }
 }
