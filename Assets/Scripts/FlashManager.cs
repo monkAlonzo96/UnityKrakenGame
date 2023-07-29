@@ -7,8 +7,9 @@ public class FlashManager : MonoBehaviour
 {
     [Header("Flash")]
     public Canvas flashCanvas; // Assign the canvas in the Inspector
+    [Header("Duration & Timer")]
     public float flashDuration = 0.5f; // Set the duration of the flash effect in seconds
-    public float flashtimer = 1.0f; // Set the duration of the fade-out effect in seconds
+    public float flashTimer = 1.0f; // Set the duration of the fade-out effect in seconds
 
     public void ShowFlashEffect()
     {
@@ -32,10 +33,10 @@ public class FlashManager : MonoBehaviour
         CanvasGroup canvasGroup = flashCanvas.GetComponent<CanvasGroup>();
         float startAlpha = 1f;
 
-        while (elapsedTime < flashtimer)
+        while (elapsedTime < flashTimer)
         {
             elapsedTime += Time.deltaTime;
-            float percentage = elapsedTime / flashtimer;
+            float percentage = elapsedTime / flashTimer;
             canvasGroup.alpha = Mathf.Lerp(startAlpha, 0f, percentage);
             yield return null;
         }
