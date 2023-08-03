@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FlashTrigger : MonoBehaviour
 {
+    [Tooltip("Attach Canvas with Flash Manager script (attached to the Canvas) here.")]
     public FlashManager flashManager;
 
     private void OnTriggerEnter(Collider other)

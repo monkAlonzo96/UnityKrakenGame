@@ -6,9 +6,12 @@ using UnityEngine.InputSystem;
 public class FlashManager : MonoBehaviour
 {
     [Header("Flash")]
+    [Tooltip("Attach Canvas here.")]
     public Canvas flashCanvas; // Assign the canvas in the Inspector
     [Header("Duration & Timer")]
+    [Tooltip("Set the desired Duration the Flash appears here.")]
     public float flashDuration = 0.5f; // Set the duration of the flash effect in seconds
+    [Tooltip("Set the desired Time the Flash appears here.")]
     public float flashTimer = 1.0f; // Set the duration of the fade-out effect in seconds
 
     public void ShowFlashEffect()
@@ -18,7 +21,7 @@ public class FlashManager : MonoBehaviour
             // Activate the canvas to show the flash effect
             flashCanvas.gameObject.SetActive(true);
 
-            // Start the flash effect coroutine
+            // Start the flash effect 
             StartCoroutine(FlashCoroutine());
         }
     }
